@@ -3,9 +3,8 @@ pipeline {
     stages {
         stage('Descargar Código') {
             steps {
-                echo 'Clonando el repositorio...'
-                // REEMPLAZA "TU_USUARIO" con tu nombre de GitHub
-                git branch: 'desarrollo', url: 'https://github.com/TU_USUARIO/proyecto-devsecops.git'
+                echo 'Clonando el repositorio...'                
+                git branch: 'desarrollo', url: 'https://github.com/y9bkh/proyecto-devsecops.git'
             }
         }
         stage('Construir Imagen (Build)') {
